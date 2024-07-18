@@ -1,7 +1,7 @@
 {
   "name": "dknieriem/wp-post-rest",
-  "type": "project",
-  "license": "MIT",
+  "type": "wordpress-plugin",
+  "license": "GPL",
   "description": "A WordPress plugin that creates a REST endpoint to retrieve post information",
   "homepage": "https://github.com/dknieriem/wp-post-rest",
   "authors": [
