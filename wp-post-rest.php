@@ -25,7 +25,12 @@ function  wp_post_rest_get_endpoint( $request ) {
  */
 function wp_post_rest_get_posts($numPosts) {
 
-  $posts = wp_get_recent_posts($numPosts);
+  $args = [
+    'numberposts' => $numPosts,
+    'post_status' => 'publish',
+  ];
+
+  $posts = wp_get_recent_posts($args);
   // No filtering needed, just use the methods given!
   return [
     'posts' => $posts, 
